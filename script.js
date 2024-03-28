@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //Storage API
 
 function updateUI() {
-       // cartItemsElement.innerHTML = ' '; // Clear previous items
+       cartItemsElement.innerHTML = ' '; // Clear previous items
         var keys = Object.keys(localStorage);
         keys.forEach(key => {
             const item = JSON.parse(localStorage.getItem(key));
@@ -66,24 +66,22 @@ function updateUI() {
 
             // Generate unique identifier for the item
             const itemId = itemName + '_' + Date.now();
-			console.log(itemId);
+            var itemsList = [];
+            itemsList.push(itemId);
+            console.log(itemId);
             // Storing item in local storage
             const item = { name: itemName, price: itemPrice };
             localStorage.setItem(itemId, JSON.stringify(item));
 			
-			//localStorage.clear();
+		//localStorage.clear();
             updateUI();
         });
     });
-
-	document.querySelectorAll('.remove-from-cart').forEach(button => {
-			button.addEventListener("click", function() {
-				localStorage.removeItem(itemId);
-				
-				updateUI();
-			});
-	});
-
+    
+	
+	
+	
+	
 
     // Initial UI update
     updateUI();
@@ -92,6 +90,16 @@ function updateUI() {
 
 
 
+document.addEventListener("click", function() {
+	document.querySelectorAll('.remove-from-cart').forEach(button => {
+			button.addEventListener("click", function() {
+				
+					localStorage.removeItem(localStorage.key(document.getElementsByClassName('.remove-from-cart')));
+					});
+				
+				//updateUI();
+			});
+	});
 
 
 
