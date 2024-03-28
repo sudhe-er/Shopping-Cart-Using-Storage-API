@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div  id="blocks" >
+			
+
+			<div id="products">
+   			 	<h2>Products</h2>
+   			 	<ul class="list">
+       				 <li data-name="Shirt" data-price="20"><span>Shirt - $20</span> <button class="btn add-to-cart">Add to Cart</button></li>
+        		 	<li data-name="Pants" data-price="30"><span>Pants - $30</span> <button class="btn add-to-cart">Add to Cart</button></li>
+       			 	<li data-name="Shoes" data-price="50"><span>Shoes - $50</span> <button class="btn add-to-cart">Add to Cart</button></li>
+    			</ul>
+			</div>
+			
+			<div id="cart">
+    			<h2>Shopping Cart</h2>
+   				 <ul id="cart-items">
+       				 <!-- Cart items will be dynamically added here -->
+    			</ul>
+    			<div id="total">
+        			Total: $<span id="total-price">0.00</span>
+   			 	</div>
+			</div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

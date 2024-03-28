@@ -1,0 +1,73 @@
+@charset "ISO-8859-1";
+ /* Styles for the shopping cart */
+    body {
+        font-family: Arial, sans-serif;
+    }
+    #cart {
+   
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #f9f9f9;
+        margin-right: 400px;
+    }
+    #cart h2 {
+        margin-top: 0;
+    }
+    #cart ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .item span {
+        flex: 1;
+    }
+    .btn {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    #products{
+     	width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        position: fixed;
+        top: 30px;
+        right: 900px;
+        background-color: #f9f9f9;
+  		margin-left: 300px;
+   } 
+   
+   .list {
+  		display: flex;
+  		flex-direction:column;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        list-style-type: none;
+        padding: 0;
+   }
+   
+   #products ul li {
+    margin-bottom: 10px; /* Adjust this value to add space between list items */
+}
+
+
+
+
+ #total {
+ margin-left: 90px;
+        margin-top: 20px;
+    }
